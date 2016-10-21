@@ -1,6 +1,11 @@
 
 package javarus;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
 /* Man и woman
  В методе main создай объект Man, занеси его ссылку в переменную man.
  Создай также объект Woman и занеси его ссылку в переменную woman.
@@ -341,4 +346,83 @@ public class Solution {
 }
 -----------------------------------------------------------
 
+/* Экранирование символов
+ Про экранирование символов в Java читайте в дополнительном материале к лекции.
+ Вывести на экран следующий текст - две строки:
 
+ It's Windows path: "C:\Program Files\Java\jdk1.7.0\bin"
+ It's Java string: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"
+ */
+public class Solution {
+
+    public static void main(String[] args) {
+        System.out.println("It's Windows path: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"");
+        System.out.println("It's Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.7.0\\\\bin\\\"");
+
+    }
+}
+-------------------------------------------
+/* Изучаем японский
+Выведи на экран 日本語
+*/
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        System.out.println("日本語");
+    }
+}
+--------------------------------------------------------------------------------
+* Как захватить мир
+ Ввести с клавиатуры число и имя, вывести на экран строку:
+ «имя» захватит мир через «число» лет. Му-ха-ха!
+ Пример: Вася захватит мир через 8 лет. Му-ха-ха!
+
+ Последовательность вводимых данных имеет большое значение.
+ */
+
+import java.io.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        
+        String sAge= bufferedReader.readLine();
+        String name = bufferedReader.readLine();
+        int nAge = Integer.parseInt(sAge);
+       
+       System.out.println(name +" захватит мир через "+ sAge + " лет. Му-ха-ха!");
+    }
+}
+--------------------------------------------------------------------------------
+/* Зарплата через 5 лет
+Ввести с клавиатуры отдельно Имя, число1, число2. Вывести надпись:
+«Имя» получает «число1» через «число2» лет.
+Пример: Коля получает 3000 через 5 лет.
+*/
+
+import java.io.*;
+
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+        InputStream inputStraem=System.in;
+        Reader inputStreamReader=new InputStreamReader (inputStraem);
+        BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(inputStraem));
+        int a;
+       String name=bufferedReader.readLine();
+       String nam=bufferedReader.readLine();
+       String na=bufferedReader.readLine();
+       int i=Integer.parseInt(nam);
+       int x=Integer.parseInt(na);
+       System.out.println(name + " получает "+i+" через "+x+" лет");
+
+    }
+}
+--------------------------------------------------------------------------
