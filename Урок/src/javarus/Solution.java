@@ -22,7 +22,10 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        //напишите тут ваш код
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int n=Integer.parseInt(br.readLine());
+        int n1=Integer.parseInt(br.readLine());
+        
 
     }
 }
