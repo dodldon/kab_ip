@@ -364,5 +364,72 @@ BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 }
   
 ------------------------------------------
+<<<<<<< OURS
+    /* 10 чисел наоборот
+Вывести на экран числа от 1 до 10 используя цикл while.
+    int a = 0;
+        while (a < 10) {
+            a++;
+            System.out.println(a);
+
+        }
+
+    }
+}
+--------------------------------------------
+    /* 10 чисел наоборот
+Вывести на экран числа от 10 до 1 используя цикл while.
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+       int a=11;
+       while(a>1){
+           a--;
+           System.out.println(a);
+       }
+
+    }
+}
+-----------------------------------------
+    import java.io.*;
+/* Хорошего не бывает много
+ Ввести с клавиатуры строку и число N.
+ Вывести на экран строку N раз используя цикл while.
+ Пример ввода:
+ абв
+ 2
+ Пример вывода:
+ абв
+ абв
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        int n = Integer.parseInt(br.readLine());
+        int m = 0;
+        while (n > m) {
+            m++;
+            System.out.println(s);
+        }
+
+    }
+}
+--------------------------------------------------------------------------------
+    /* S-квадрат
+ Вывести на экран квадрат из 10х10 букв S используя цикл while.
+ Буквы в каждой строке не разделять.
+ 
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        int i = 0;
+        while (i < 10) {
+            i++;
+            System.out.println("SSSSSSSSSS");
+        }
+    }
+}
 */
 }
