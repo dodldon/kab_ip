@@ -471,6 +471,76 @@ public class Solution
 
     }
 }
+/* Рисуем прямоугольник
+ Ввести с клавиатуры два числа m и n.
+ Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
+ Пример: m=2, n=4
+ 8888
+ 8888
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int m = Integer.parseInt(br.readLine());
+        int n = Integer.parseInt(br.readLine());
+        int i,x;
+        for (i = 1; i <= m; i++) {
+            for (x = 2; x <= n; x++) {
+                System.out.print("8");
+            }
+
+            System.out.println("8");
+        }
+    }
+}
+--------------------------------------------------------------------
+    /* Рисуем треугольник
+ Используя цикл for вывести на экран прямоугольный треугольник из восьмёрок 
+ со сторонами 10 и 10.
+ Пример:
+ 8
+ 88
+ 888
+ ...
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        for (int i = 0; i < 1; i++) {
+            
+            System.out.println("8");
+            System.out.println("88");
+            System.out.println("888");
+            System.out.println("8888");
+            System.out.println("88888");
+            System.out.println("888888");
+            System.out.println("8888888");
+            System.out.println("88888888");
+            System.out.println("888888888");
+            System.out.println("8888888888");
+
+        }
+    }
+}
+/* Рисуем линии
+ Используя цикл for вывести на экран:
+ - горизонтальную линию из 10 восьмёрок
+ - вертикальную линию из 10 восьмёрок.
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        int x;
+        for (x = 1; x <= 1; x++) {
+            System.out.print("888888888");
+            //System.out.println("8");
+            {
+                for (x = 0; x <= 10; x++) {
+                    System.out.println("8");
+                }
+            }
+        }
+
+    }
+}
 
 */
 }
