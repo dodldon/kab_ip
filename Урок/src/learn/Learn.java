@@ -541,6 +541,25 @@ public class Solution {
 
     }
 }
+/*Все любят Мамбу 
+ Ввести с клавиатуры имя и используя цикл 
+ for 10 раз вывести: 
+ [имя любит меня.] 
+ Пример текста: 
+ Света любит меня. 
+ Света любит меня.
+ 
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();      
+        for (int n = 0; n < 10; n++) {
+            System.out.println(s);
+            
+        }
+    }
+}
 
 */
 }
