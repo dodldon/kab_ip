@@ -553,11 +553,91 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String s = br.readLine();      
+        String s = br.readLine();
         for (int n = 0; n < 10; n++) {
-            System.out.println(s);
+            System.out.println(s + " любит меня.");
             
         }
+    }
+}
+/* 
+Выводим квадрат числа
+
+public class Solution {
+    public static void main(String[] args) {
+        int a;
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String s=br.readLine();
+        int n=Integer.parseInt(s);
+        n=a*a;
+        
+    }
+}
+    
+Подойдет только 20
+
+
+public class Solution {
+    public static int a = 1;
+    public static int b = 3;
+    public static int c = 9;
+    public static int d = 27;
+
+    public static void main(String[] args) {
+
+        int result = - a + b-c +d;
+
+        System.out.println(result);
+    }
+}
+    
+Белеет парус одинокий
+
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println("Белеет парус одинокий");
+        System.out.println("В тумане моря голубом!...");
+        System.out.println("Что ищет он в стране далекой?");
+        
+
+        System.out.println("Что кинул он в краю родном?..");
+    }
+}
+    
+Выводим квадрат числа
+Напиши программу, которая считывает с клавиатуры целое число a и выводит квадрат 
+этого числа (a * a).
+Внимательно просмотри лекцию. Для считывания данных с клавиатуры используй метод 
+nextInt() класса Scanner.
+
+public class Solution {
+    public static void main(String[] args) {
+        int a;
+        Scanner sc=new Scanner(System.in);
+        a = sc.nextInt();
+        System.out.println(a * a);
+    }
+}
+    /* 
+Реализуй метод printCircleLength. Параметр метода — радиус окружности. 
+Метод должен вывести на экран длину окружности, 
+рассчитанной по формуле: L = 2 * Pi * radius.
+Результат — дробное число (тип double).
+В качестве значения Pi используй значение 3.14.
+ 
+public class Solution {
+
+    public static void main(String[] args) {
+        printCircleLength(5);
+    }
+    //static double Pi = 3.14;
+    //static double L;
+
+    public static void printCircleLength(int radius) {
+        double Pi = 3.14;
+        double L;
+        System.out.println(L = 2 * Pi * radius);
     }
 }
 
