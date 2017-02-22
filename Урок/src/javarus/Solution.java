@@ -1,23 +1,26 @@
 package javarus;
 
 /* 
-Реализуй метод printCircleLength. Параметр метода — радиус окружности. 
-Метод должен вывести на экран длину окружности, 
-рассчитанной по формуле: L = 2 * Pi * radius.
-Результат — дробное число (тип double).
-В качестве значения Pi используй значение 3.14.
+Метод convertCelsiumToFahrenheit(int celsium) принимает значение в градусах Цельсия. 
+Метод должен переводить температуру и возвращать значение в градусах Фаренгейта.
+Температура по Цельсию TC и температура по Фаренгейту TF связаны следующим соотношением:
+TC = (TF – 32) * 5/9
+Пример:
+В метод convertCelsiumToFahrenheit на вход подается значение 40.
+Пример вывода:
+104.0
  */
 public class Solution {
 
     public static void main(String[] args) {
-        printCircleLength(5);
+        System.out.println(convertCelsiumToFahrenheit(40));
     }
-    //static double Pi = 3.14;
-    //static double L;
 
-    public static void printCircleLength(int radius) {
-        double Pi = 3.14;
-        double L;
-        System.out.println(L = 2 * Pi * radius);
+    public static double convertCelsiumToFahrenheit(int celsium) {
+        double f;
+        f = (double) celsium;
+        double c = 9*(f / 5) + 32;
+        return c;
+
     }
 }
