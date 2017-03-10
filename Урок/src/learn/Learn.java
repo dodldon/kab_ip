@@ -665,5 +665,116 @@ public class Solution {
     }
 }
 
+Да хоть на Луну!
+ 
+public class Solution {
+
+    public static void main(String[] args) {
+        System.out.println(getWeight(888));
+    }
+
+    public static double getWeight(int weightEarth) {
+        double w=weightEarth;
+        return w * 17 / 100;
+    }
+}
+    
+Набираем воду в бассейн
+
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getVolume(25, 5, 2));
+    }
+
+    public static long getVolume(int a, int b, int c) {
+        long vol=(a*b*c)*1000;
+        return vol;
+    }
+}
+   
+Полнометражная картина
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getMetreFromCentimetre(243));
+    }
+
+    public static int getMetreFromCentimetre(int centimetre) {
+      return centimetre /100;
+       //return s;
+    }
+}
+    
+Не думать о секундах…
+
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getCountSecondsPassedInCurrentHour(12345));
+    }
+
+    public static int getCountSecondsPassedInCurrentHour(int seconds) {
+        int a=seconds/3600;//часы
+        int b=a*3600;//секунд
+        return seconds-b;
+    }
+}
+
+Сумма цифр трехзначного числа
+=15
+ 
+public class Solution {
+
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(546));
+    }
+
+    public static int sumDigitsInNumber(int number) {
+        int a = number % 10;
+        int b = number / 10 % 10;
+        int c = number / 100 % 10;
+        int i = a + b + c;
+        return i;
+    }
+}
+
+Достойная оплата труда
+ 
+public class Solution {
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+}
+    /*
+Ввести с клавиатуры три числа, вывести на экран среднее из них.
+Т.е. не самое большое и не самое маленькое.
+Если все числа равны, вивести любое из них.
+ 
+import java.io.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int a = Integer.parseInt(br.readLine());
+        int b = Integer.parseInt(br.readLine());
+        int c = Integer.parseInt(br.readLine());
+
+        if (b <= a && a <= c || c <= a && a <= b) {
+            System.out.println(a);
+        } else if (a <= b && b <= c || c <= b && b <= a) {
+            System.out.println(b);
+        } else if (a <= c && c <= b || b <= c && c <= a) {
+            System.out.println(c);
+        }
+
+    }
+}
+
 */
 }

@@ -1,26 +1,30 @@
 package javarus;
 
-/* 
-Метод convertCelsiumToFahrenheit(int celsium) принимает значение в градусах Цельсия. 
-Метод должен переводить температуру и возвращать значение в градусах Фаренгейта.
-Температура по Цельсию TC и температура по Фаренгейту TF связаны следующим соотношением:
-TC = (TF – 32) * 5/9
-Пример:
-В метод convertCelsiumToFahrenheit на вход подается значение 40.
-Пример вывода:
-104.0
+
+/*
+Ввести с клавиатуры три числа, вывести на экран среднее из них.
+Т.е. не самое большое и не самое маленькое.
+Если все числа равны, вивести любое из них.
  */
+import java.io.*;
+
 public class Solution {
 
-    public static void main(String[] args) {
-        System.out.println(convertCelsiumToFahrenheit(40));
-    }
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    public static double convertCelsiumToFahrenheit(int celsium) {
-        double f;
-        f = (double) celsium;
-        double c = 9*(f / 5) + 32;
-        return c;
+        int a = Integer.parseInt(br.readLine());
+        int b = Integer.parseInt(br.readLine());
+        int c = Integer.parseInt(br.readLine());
+
+        if (b <= a && a <= c || c <= a && a <= b) {
+            System.out.println(a);
+        } else if (a <= b && b <= c || c <= b && b <= a) {
+            System.out.println(b);
+        } else if (a <= c && c <= b || b <= c && c <= a) {
+            System.out.println(c);
+        }
 
     }
 }
+
