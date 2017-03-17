@@ -775,6 +775,85 @@ public class Solution {
 
     }
 }
+/* 
+Вводить с клавиатуры числа и считать их сумму.
+Если пользователь ввел -1, вывести на экран сумму и завершить программу.
+-1 должно учитываться в сумме.
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        while (true) {
+            int n = Integer.parseInt(br.readLine());
+            int n1 = Integer.parseInt(br.readLine());
+            if (n==-1 | n1 == -1) {
+                break;
+            }
+            System.out.println(n + n1);
+        }
+    }
+}
+    /*Ввести с клавиатуры строку name.
+Ввести с клавиатуры дату рождения (три числа): y, m, d.
+Вывести на экран текст:
+«Меня зовут name.
+Я родился d.m.y»
+*
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+String n = reader.readLine();
+int y = Integer.parseInt(reader.readLine());
+int m = Integer.parseInt(reader.readLine());
+int d = Integer.parseInt(reader.readLine());
+System.out.println("Меня зовут "+ n+".");
+System.out.println("Я родился "+d+"."+m+"."+y); 
+    }
+}
+    /* 
+Вводить с клавиатуры числа и считать их сумму.
+Если пользователь ввел -1, вывести на экран сумму и завершить программу.
+-1 должно учитываться в сумме.
+ 
+import java.io.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = 0;
+        int s = 0;
+        while (t != -1) {
+            t = Integer.parseInt(br.readLine());
+            s += t;
+        }
+        System.out.println(s);
+    }
+}
+    /* 
+Создать класс Cat. У кота должно быть 
+имя (name, String), 
+возраст (age, int), 
+вес (weight, int), 
+сила (strength, int).
+    
+public class Cat {
+
+    String name;
+    int age;
+    int weight;
+    int strength;
+
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.name = "N";
+        cat.age = 1;
+        cat.weight = 2;
+        cat.strength = 3;
+    }
+}
 
 */
 }
