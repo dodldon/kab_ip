@@ -4,7 +4,8 @@
 <%@ page import="java.net.*" %>
 
 <div align="right"><%! private int count = 0;%>
-    <%= ++count%></div>
+    <%= ++count%>
+</div>
 
 <h1 align="center">Ваш IP адрес:<br>
     <mark><%= request.getRemoteHost()%></mark>
